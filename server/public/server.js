@@ -3,7 +3,7 @@ const app = express();
 const PORT = 5000;
 const quotes_data = require('./modules/quotes-data');
 
-app.use(express.static('server'));
+app.use(express.static('server/public'));
 
 app.get('/quote', (req, res) => {
     const randomNumber = Math.floor(Math.random() * 3);
